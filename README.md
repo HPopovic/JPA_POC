@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS user_activity_log (
 ```
 ## Create Postgres Function and Stored Procedure
 
-Postgres function for read
+### Postgres function for read
 ```
 CREATE OR REPLACE FUNCTION get_usernames()
 RETURNS TABLE(id INT, username VARCHAR)
@@ -48,7 +48,7 @@ AS $$
 $$;
 ```
 
-Postgres procedure for insert
+### Postgres procedure for insert
 ```
 CREATE OR REPLACE PROCEDURE log_username_activity(IN username_input TEXT)
 LANGUAGE plpgsql
